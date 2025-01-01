@@ -93,7 +93,10 @@ export default function TodaysDayPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg">{prediction || "Loading..."}</p>
+              <p
+                className="text-lg"
+                dangerouslySetInnerHTML={{ __html: prediction || "Loading..." }}
+              ></p>
             </CardContent>
           </Card>
         </div>
