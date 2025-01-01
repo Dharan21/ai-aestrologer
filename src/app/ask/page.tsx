@@ -19,18 +19,7 @@ export default function AskQuestionPage() {
   const [time, setTime] = useState("00:00");
   const [location, setLocation] = useState({ lat: 0, lng: 0 });
   const [question, setQuestion] = useState("");
-  const [answer, setAnswer] = useState(`Sagittarius Horoscope (Today)
-General Overview: Sagittarius, today brings a mix of adventurous energy and introspection. Embrace spontaneity while also taking time to reflect on your inner journey.
-
-Emotional Outlook: Your emotional state may feel a bit unsettled today, Sagittarius. Be open to addressing any underlying feelings that arise, and communicate openly with loved ones to strengthen your relationships.
-
-Career and Finances: Career opportunities may present themselves today, so keep an eye out for new paths to explore. Financially, it's a good time to review your budget and make any necessary adjustments for long-term stability.
-
-Health and Wellness: Prioritize your health today, Sagittarius. Engage in activities that rejuvenate both your body and mind. Remember to stay hydrated and nourish yourself with wholesome foods.
-
-Lucky Numbers and Colors: Lucky numbers for today are 7, 14, 21. Embrace the colors blue and green to attract positive energy and luck your way.
-
-Advice: Embrace change with an open heart, Sagittarius. Remember that growth often comes from stepping outside your comfort zone. Trust in the journey and believe in your abilities to overcome any obstacles that come your way.`);
+  const [answer, setAnswer] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
