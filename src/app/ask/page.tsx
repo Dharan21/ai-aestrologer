@@ -29,6 +29,7 @@ export default function AskQuestionPage() {
       setAnswer("Please fill in all the details to ask the stars.");
       return;
     }
+    setAnswer("");
     setLoading(true);
     setLoading(true);
 
